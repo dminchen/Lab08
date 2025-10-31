@@ -17,4 +17,16 @@ public class CustomListTest {
         assertTrue(list.hasCity(calgary)); // this must fail with the stub
     }
 
+    @Test
+    public void testDeleteCity() {
+        CustomList list = new CustomList();
+        City saskatoon = new City("Saskatoon", "SK");
+        list.addCity(saskatoon);
+        assertTrue(list.hasCity(saskatoon));
+
+        list.deleteCity(saskatoon);
+
+        assertFalse(list.hasCity(saskatoon));
+    }
+
 }
