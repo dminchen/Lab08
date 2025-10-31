@@ -15,6 +15,6 @@ public class CustomList {
     }
 
     public boolean hasCity(City city) {
-        return false;
+        return cities.contains(city);
     }
 }
