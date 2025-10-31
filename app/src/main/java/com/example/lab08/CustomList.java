@@ -21,4 +21,8 @@ public class CustomList {
     public void deleteCity(City city) {
         cities.remove(city);
     }
+
+    public int getCount() {
+        return -1; // wrong on purpose
+    }
 }
